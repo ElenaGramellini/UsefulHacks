@@ -3,9 +3,6 @@ import subprocess
 import shlex
 import argparse
 
-# This code takes as an argument the definition name and creates a txt file with the list of locations on SamWeb 
-# Beware: if the definition contains many many files, this simple hack is going to take a long time to run
-
 
 # Take definiton name as input
 parser = argparse.ArgumentParser()
@@ -19,8 +16,8 @@ file_name         = args.file_name
 
 # Create list of files by redirecting the samweb commant output to an output file.
 command = "cat "+path_to_directory+"/\".(get)("+file_name+")(locality)\""
-command = shlex.split(command)
 #print command
+command = shlex.split(command)
 print 
 print "|------------------------------------------------------|"
 print "| LEGEND                                               |"

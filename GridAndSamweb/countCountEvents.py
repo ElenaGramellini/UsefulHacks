@@ -3,7 +3,7 @@
 # from a count events file
 
 # Open the file with read only permit
-f = open('countEvents.txt')
+f = open('/uboone/app/users/elenag/ubooneDev/CRTTest/CRTWindow/correctedCRTWindow_NOT_WORKING/evets.txt')
 line = f.readline()
 totalEvents = 0
 while line:
